@@ -1,7 +1,95 @@
 const Footer = () => {
   return (
     <>
-      <footer></footer>
+      <div className="extra">
+        <div className="containers">
+          <div className="freeReturn">
+            <div className="HomeImgDiv">
+              <img src="f7_shippingbox.png" alt="" />
+            </div>
+            <div className="benefits ">
+              <h3>Free Return</h3>
+              <p>
+                Enjoy peace of mind with free <br /> returns on all purchases.
+              </p>
+            </div>
+          </div>
+          <div className="freeShipping">
+            <div className="HomeImgDiv">
+              <img src="hugeicons_shipping-truck-02.png" alt="" />
+            </div>
+            <div className="benefits">
+              <h3>Free Shipping</h3>
+              <p>
+                Enjoy free shipping on <br />
+                order more than $4000.
+              </p>
+            </div>
+          </div>
+          <div className="online">
+            <div className="HomeImgDiv">
+              <img src="fluent_person-support-24-regular.png" alt="" />
+            </div>
+
+            <div className="benefits">
+              <h3>Online</h3>
+              <p>
+                8am-6pm online support,
+                <br /> 7 days a week.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div className="footerDiv">
+          <div>
+            <img src="Logo.png" alt="LushScent logo" />
+          </div>
+          <div>
+            <h4>Products</h4>
+            <ul>
+              <li>Scented Candles</li>
+              <li>Diffussers</li>
+              <li>Fragrance Oil</li>
+              <li>Air-Freshners</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Links</h4>
+            <a href="">Home</a>
+            <a href="">Products</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">FAQs</a>
+          </div>
+          <div>
+            <h4>Get in touch</h4>
+            <p>
+              Got a question or needs an assistance? <br /> We are here to help.
+              Our dedicated <br /> support team is ready to assist you and{" "}
+              <br />
+              answer any of your questions.
+            </p>
+          </div>
+        </div>
+        <hr
+          style={{
+            width: "90%",
+            marginLeft: "auto",
+            marginRight: "auto",
+            marginTop: "15px",
+          }}
+        />
+        <p
+          style={{
+            textAlign: "center",
+            marginTop: "15px",
+          }}
+        >
+          Copyright 2024. All right reserved.
+        </p>
+      </footer>
     </>
   );
 };

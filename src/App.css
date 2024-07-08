@@ -175,3 +175,37 @@ nav .inputContainer{
 .HomeImgDiv img{
     margin-right: 25px;
 }
+footer{
+    width: 100%;
+    background-color: #1A1A1A;
+   
+    height: 300px;
+}
+footer h4{
+    color: white;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+footer a{
+    display: block;
+    color: #CAC9C9;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 2em;
+}
+footer p{
+    color: #CAC9C9;
+    font-size: 15px;
+    line-height: 2em;
+}
+.footerDiv{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 35px;
+}
+ul{
+    list-style: none;
+    color: #CAC9C9;
+    font-size: 15px;
+    line-height: 2em;
+}
