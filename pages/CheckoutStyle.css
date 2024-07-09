@@ -1,0 +1,149 @@
+.form-container {
+    margin-top: 20px;
+    max-width: 600px;
+    /* margin: 0 auto; */
+    padding: 20px;
+    margin-left: 30px;
+    margin-bottom: 9%;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap: 10px;
+}
+.input-group-short{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.input-group input  {
+    /* flex: 1; */
+    border-radius: 5px;
+    background-color: #EFEEF1;
+    border: none;
+    outline: none;
+}
+.input-group-short input {
+    border-radius: 5px;
+    background-color: #EFEEF1;
+    border: none;
+    outline: none;
+    padding: 10px 4.3%;
+    
+}
+.input-group .longInput{
+    /* min-width: calc(50% - 10px); */
+    padding: 10px 23%;
+}
+
+
+.input-group input:focus {
+    border-color: #999;
+}
+.coButton{
+    padding: 10px 35px;
+    background-color: #DC82B5;
+    color: #EFEEF1;
+    border: none;
+    border-radius: 5px;
+    margin-left: 19%;
+}
+.checkoutNav{
+    background-color: #EFEEF1;
+    height: 50px;
+    display: flex;
+}
+.checkoutNav div{
+    width: 35%;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.checkoutNav div a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #565656;
+    margin-right: 15px;
+}
+.checkoutNav div a:hover{
+    text-decoration: underline #DC82B5 2px;
+}
+/* payments style */
+.card-form {
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    margin-left: 50px;
+    margin-bottom: 9%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: small;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #EFEEF1;
+    border: none;
+    color: #565656;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-column {
+    flex: 1;
+}
+
+.form-column:not(:last-child) {
+    margin-right: 10px;
+}
+.form-column input {
+    width: calc(100% - 2px);
+    /* Adjust width to fit within the container */
+}
+.paymentMethod{
+    margin-left: 60px;
+    margin-top: 35px;
+}
+.paymentMethod div{
+    display: inline;
+    width: 100px;
+    margin-right: 15px;
+}
+.paymentMethod div img{
+    margin-left: 6px;
+}
+ .checkoutImg img {
+     width: 180px;
+
+ }
+ .checkoutImg{
+    width: 20%;
+    margin: 20px;
+ }
+ 

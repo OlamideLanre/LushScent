@@ -1,0 +1,43 @@
+/* MEDIA QUERY */
+@media screen and (max-width:540px) {
+    .navBar {
+        display: block;
+    }
+
+    .navBar a {
+        display: none;
+    }
+
+    .navBar .logo {
+        width: 130px;
+        margin-top: 10px;
+    }
+
+    .navBar .inputContainer div {
+        display: none;
+    }
+
+    .navBar .inputContainer input {
+        width: 100%;
+        padding: 10px 12% ;
+    }
+    .headerImage{
+        display: none;
+
+    }
+    .headerImage2{
+        display: none;
+    }
+    .headerImageTexts {
+        display:none ;
+    }
+ #icon {
+     position: absolute;
+     top: 12%;
+     left: 5%;
+
+ }
+ .navTwo {
+    display: none;
+ }
+}

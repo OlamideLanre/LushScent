@@ -2,3 +2,277 @@
 @tailwind components;
 @tailwind utilities; */
 
+/* MEDIA QUERY */
+@media (min-width: 360px) and (max-width: 700px) {
+    .navBar {
+        display: block;
+        border: none;
+    }
+
+    .navBar a {
+        display: none;
+    }
+
+    .navBar .logo {
+        width: 130px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .navBar .inputContainer div {
+        display: none;
+    }
+
+    .navBar .inputContainer input {
+        width: 70%;
+        padding: 10px 12%;
+    }
+    .navBar .inputContainer  {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .headerImage {
+        display: none;
+
+    }
+
+    .headerImage2 {
+        display: none;
+    }
+
+    .headerImageTexts {
+        display: none;
+    }
+
+    #icon {
+        position: absolute;
+        top: 75px;
+        left: 5%;
+
+    }
+
+    .navtwo {
+        width: auto;
+        margin-top: 15%;
+        justify-content: flex-start;
+    }
+    .navtwo a{
+        display: none;
+    }
+    .navtwo span{
+        margin-left: 20px;
+        margin-right: 47%;
+    }
+    .MainContainer{
+            grid-template-columns: 200px 200px;
+            margin-left: 1em;
+    }
+    .card{
+        width: 180px;
+        height: 300px;
+    }
+    .MainContainer .imgContainer img{
+        width: 170px;
+    }
+    .buyBtn{
+        padding: 8px;
+    }
+        .pageNums {
+            display: none;
+        }
+        .benefits{
+            display: none;
+        }
+        footer{
+            display: none;
+        }
+    .mobileFooterDiv{
+        display: flex;
+    }
+    .hidden{
+        width: 100%;
+        display: block;
+    }
+    .summary-container {
+        background-color: white;
+        right: 5%;
+        top: 70%;
+        /* display: none; */
+    }
+    .summary-container img{
+        width: 90px;
+    }
+    .summary-item{
+        font-size: 0.8em;
+    }
+    .checkout-button{
+        margin-left: 0%;
+        width: 100%;
+    }
+    .product-list{
+        width: 90%;
+        margin-left: 3%;
+        margin-bottom: 0%;
+        padding: 10px;
+    }
+    .product-price{
+        font-size: 0.8em;
+        margin-right: 45px;
+    }
+    .quantity-control button {
+        background-color: #F1CCE1;
+        
+        padding: 1px 5px;
+        
+        font-size: 0.8em;
+    }
+    .product-checkbox input {
+        height: 20px;
+        width: 20px;
+        
+    }
+    .mobile-hidden {
+        display: none;
+    }
+    .checkoutImg{
+        margin-left: 20px;
+    }
+    .checkoutImg img{
+        width: 130px;
+    }
+    .checkoutNav{
+        height: 40px;
+        width: 95%;
+        margin-left: 20px;
+    }
+    .checkoutNav div{
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .form-container{
+        padding-left: 0%;
+        /* margin-bottom: 20px; */
+    }
+    .input-group-short{
+        flex-wrap: wrap;
+    }
+    .input-group-short input{
+        padding: 10px 23%;
+    }
+    .coButton{
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 40px;
+    }
+    .card-form{
+        margin-left: 0%;
+        width: 100%;
+    }
+    .paymentMethod{
+        margin-left: 5%;
+    }
+    .form-group input{
+        width: 90%;
+    }
+    .payBtn{
+        width: 90%;
+    }
+    .form-row{
+        display: block;
+    }
+
+}
+
+/* TABLET */
+@media (min-width:701px) and (max-width:1024px) {
+    .navBar .logo {
+        width: 150px;
+        margin-top: 5px;
+    }
+
+    .navBar a {
+        font-size: 0.9em;
+    }
+
+    #icon {
+        right: 16%;
+        top: 20px;
+    }
+
+    .checkoutNav div {
+        width: 100%;
+    }
+
+    .benefit-item {
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    .benefit-text h3 {
+        font-size: 15px;
+    }
+
+    .benefit-text p {
+        font-size: 13px;
+    }
+
+    .footerDiv {
+        width: 100%;
+    }
+
+    ul {
+        font-size: 14px;
+    }
+
+    footer a {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    .headerImageTexts {
+        margin-left: 10%;
+        top: 20%;
+    }
+
+    .headerImage2 {
+        margin-left: 35%;
+    }
+
+    .navtwo {
+        width: 100%;
+    }
+
+    .MainContainer {
+        grid-template-columns: 250px 250px 250px;
+        margin-left: 5%;
+        width: 100%;
+    }
+ .MainContainer .imgContainer img {
+     width: 200px;
+ }
+ .card{
+    width: 220px;
+    height: 330px;
+ }
+ .pageNums{
+    width: 100%;
+    margin-left: 25%;
+ }
+    /* footer{
+        height: 530px;
+    } */
+    .summary-container{
+    right: 3%;
+        width: 30%;
+        top: 8%;
+    }
+    .product-list{
+        width: 50%;
+        margin-left: 2%;
+     }
+}

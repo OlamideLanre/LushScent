@@ -1,7 +1,18 @@
 import "./footerStyle.css";
 import { FaFacebook, FaInstagram, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
+  const navigate = useNavigate();
+  function handleHome() {
+    navigate("/");
+  }
+  function handleCart() {
+    navigate("/cart");
+  }
+  function handleCheckout() {
+    navigate("/checkout");
+  }
   return (
     <>
       <div className="benefits">
@@ -133,6 +144,26 @@ const Footer = () => {
           Copyright 2024. All right reserved.
         </p>
       </footer>
+
+      {/* Mobile footer */}
+      <div className="hidden">
+        <div className="mobileFooterDiv">
+          <div className="iconHolder">
+            <div onClick={handleHome}>
+              <img src="Home.png" alt="icon" />
+            </div>
+            <div onClick={handleCart}>
+              <img src="Cart.png" alt="cart" />
+            </div>
+            <div onClick={handleCheckout}>
+              <img src="Notification.png" alt="bell" />
+            </div>
+            <div>
+              <img src="Settings.png" alt="setting" />
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };

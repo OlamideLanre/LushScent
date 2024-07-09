@@ -1,4 +1,9 @@
+import { useNavigate } from "react-router-dom";
 const Cart = () => {
+  const navigate = useNavigate();
+  function handleNavigate() {
+    navigate("/checkout");
+  }
   const products = [
     {
       id: 1,
@@ -104,7 +109,9 @@ const Cart = () => {
             <span>Total</span>
             <span style={{ color: "#DC82B5" }}>$249.96</span>
           </div>
-          <button className="checkout-button">Check Out</button>
+          <button className="checkout-button" onClick={handleNavigate}>
+            Check Out
+          </button>
         </div>
       </div>
     </>

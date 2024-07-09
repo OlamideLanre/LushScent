@@ -167,7 +167,7 @@ h2 {
     margin-top: 3%;
 }
 .product-list {
-  background-color: #f7f7f7;
+  background-color: #EFEEF1;
   padding: 20px;
   border-radius: 10px;
   width: 500px;
@@ -247,4 +247,8 @@ color: #1A1A1A
   font-size: 1.2em;
   font-weight: 500;
   color: #1A1A1A;
+}
+.headerImage2{
+    margin-left: 40%;
+    margin-top: 50px;
 }

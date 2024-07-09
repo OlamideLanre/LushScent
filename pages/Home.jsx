@@ -13,18 +13,14 @@ const Home = () => {
             objectFit: "cover",
             filter: "brightness(35%)",
           }}
+          className="headerImage"
         />
       </div>
       <div className="headerImageTexts">
         <img src="Our Products.png" alt="" />
         <p>all our products are handmade with love and tenderness</p>
       </div>
-      <div
-        style={{
-          marginLeft: "40%",
-          marginTop: "50px",
-        }}
-      >
+      <div className="headerImage2">
         <img src="ourProduct.png" alt="image" />
       </div>
 
@@ -39,6 +35,9 @@ const Home = () => {
         <span
           style={{
             fontWeight: "bold",
+            backgroundColor: "#EFEEF1",
+            width: "35px",
+            textAlign: "center",
           }}
         >
           All
