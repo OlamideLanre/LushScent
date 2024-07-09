@@ -43,4 +43,8 @@
 .profile {
     display: none;
 }
+.navBarImgCon{
+    display: ruby-text;
+ margin-top: 9px
+}
 
