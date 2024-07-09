@@ -1,258 +1,122 @@
 const ProductsDisplay = () => {
+  const products = [
+    {
+      id: 1,
+      name: "Scented Candle",
+      flavor: "Cherry and Cake",
+      price: 59.99,
+      image: "Candle.png",
+    },
+    {
+      id: 2,
+      name: "Diffuser",
+      flavor: "Mint flavour",
+      price: 39.99,
+      image: "diffuser.png",
+    },
+    {
+      id: 3,
+      name: "Scented Candle",
+      flavor: "Cherry and Cake",
+      price: 59.99,
+      image: "Candle2.png",
+    },
+    {
+      id: 4,
+      name: "Diffuser",
+      flavor: "Cherry flavour",
+      price: 59.99,
+      image: "Diffuser2.png",
+    },
+    {
+      id: 5,
+      name: "Fragrance oil",
+      flavor: "Cherry flavour",
+      price: 59.99,
+      image: "FragranceOil.png",
+    },
+    {
+      id: 6,
+      name: "Scented candle",
+      flavor: "Apple and Cake",
+      price: 59.99,
+      image: "Candle3.png",
+    },
+    {
+      id: 7,
+      name: "Air Freshner",
+      flavor: "Car Air Freshner",
+      price: 59.99,
+      image: "AirFreshner.png",
+    },
+    {
+      id: 8,
+      name: "Fragrance oil",
+      flavor: "Chery flavour",
+      price: 59.99,
+      image: "FragranceOil2.png",
+    },
+    {
+      id: 9,
+      name: "Air Freshner",
+      flavor: "Car Air Freshner",
+      price: 59.99,
+      image: "AirFreshner2.png",
+    },
+    {
+      id: 10,
+      name: "Fragrance oil",
+      flavor: "Chery flavour",
+      price: 59.99,
+      image: "FragranceOil3.png",
+    },
+    {
+      id: 11,
+      name: "Diffuser",
+      flavor: "Cherry flavour",
+      price: 59.99,
+      image: "Diffuser2.png",
+    },
+    {
+      id: 12,
+      name: "Scented Candle",
+      flavor: "Cherry and Cake",
+      price: 59.99,
+      image: "Candle4.png",
+    },
+  ];
   return (
     <>
       <div className="MainContainer">
-        <div className="card">
-          <div className="imgContainer">
-            <img src="Candle.png" alt="scented candle" />
-          </div>
-          <div className="texts">
-            <p className="productType">Scented Candle</p>
-            <p className="productName">Cherry and Cake</p>
-            <span className="productPrice">$ 59.99/</span>
-            <span className="productWeight">200ml</span>
-          </div>
-
-          <div className="btnsContainer">
-            <button className="buyBtn">Buy Now</button>
-            <div className="iconDiv">
-              <button className="iconBtn">
-                <img src="Cart.png" alt="" />
+        {products.map((product) => (
+          <div className="card" key={product.id}>
+            <div className="imgContainer">
+              <img src={product.image} alt={product.name} />
+            </div>
+            <div className="texts">
+              <p className="productType">{product.name}</p>
+              <p className="productName">{product.flavor}</p>
+              <span className="productPrice">${product.price.toFixed(2)}/</span>
+              <span className="productWeight">200ml</span>
+            </div>
+            <div className="btnsContainer">
+              <button
+                className="buyBtn"
+                onClick={() => onProductSelect(product)}
+              >
+                Buy Now
               </button>
+              <div className="iconDiv">
+                <button
+                  className="iconBtn"
+                  onClick={() => onProductSelect(product)}
+                >
+                  <img src="Cart.png" alt="Cart" />
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        {/* card 2 */}
-        <div className="card">
-          <div className="imgContainer">
-            <img src="diffuser.png" alt="diffuser" />
-          </div>
-          <div className="texts">
-            <p className="productType">Diffusser</p>
-            <p className="productName">Mint flavour</p>
-            <span className="productPrice">$ 39.99/</span>
-            <span className="productWeight">200ml</span>
-          </div>
-
-          <div className="btnsContainer">
-            <button className="buyBtn">Buy Now</button>
-            <div className="iconDiv">
-              <button className="iconBtn">
-                <img src="Cart.png" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-        {/* card 3 */}
-        <div className="card">
-          <div className="imgContainer">
-            <img src="Candle2.png" alt="scented candle" />
-          </div>
-          <div className="texts">
-            <p className="productType">Scented Candle</p>
-            <p className="productName">Cherry and Cake</p>
-            <span className="productPrice">$ 59.99/</span>
-            <span className="productWeight">200ml</span>
-          </div>
-
-          <div className="btnsContainer">
-            <button className="buyBtn">Buy Now</button>
-            <div className="iconDiv">
-              <button className="iconBtn">
-                <img src="Cart.png" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-        {/* card4 */}
-        <div className="card">
-          <div className="imgContainer">
-            <img src="Diffuser2.png" alt="diffuser" />
-          </div>
-          <div>
-            <p className="productType">Diffusser</p>
-            <p className="productName">Cherry flavour</p>
-            <span className="productPrice">$ 59.99/</span>
-            <span className="productWeight">200ml</span>
-          </div>
-
-          <div className="btnsContainer">
-            <button className="buyBtn">Buy Now</button>
-            <div className="iconDiv">
-              <button className="iconBtn">
-                <img src="Cart.png" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-        {/* card5 */}
-        <div className="card">
-          <div className="imgContainer">
-            <img src="FragranceOil.png" alt="FragranceOil" />
-          </div>
-          <div className="texts">
-            <p className="productType">Fragrance Oil</p>
-            <p className="productName">Cherry flavour</p>
-            <span className="productPrice">$ 59.99/</span>
-            <span className="productWeight">200ml</span>
-          </div>
-
-          <div className="btnsContainer">
-            <button className="buyBtn">Buy Now</button>
-            <div className="iconDiv">
-              <button className="iconBtn">
-                <img src="Cart.png" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-        {/* card6 */}
-        <div className="card">
-          <div className="imgContainer">
-            <img src="Candle3.png" alt="scented candle" />
-          </div>
-          <div className="texts">
-            <p className="productType">Scented Candle</p>
-            <p className="productName">Apple and Cake</p>
-            <span className="productPrice">$ 59.99/</span>
-            <span className="productWeight">200ml</span>
-          </div>
-
-          <div className="btnsContainer">
-            <button className="buyBtn">Buy Now</button>
-            <div className="iconDiv">
-              <button className="iconBtn">
-                <img src="Cart.png" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-        {/* card7 */}
-        <div className="card">
-          <div className="imgContainer">
-            <img src="AirFreshner.png" alt="airfreshner" />
-          </div>
-          <div className="texts">
-            <p className="productType">Air Freshner</p>
-            <p className="productName">Car Air Freshner</p>
-            <span className="productPrice">$ 59.99/</span>
-            <span className="productWeight">200ml</span>
-          </div>
-
-          <div className="btnsContainer">
-            <button className="buyBtn">Buy Now</button>
-            <div className="iconDiv">
-              <button className="iconBtn">
-                <img src="Cart.png" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-        {/* card8 */}
-        <div className="card">
-          <div className="imgContainer">
-            <img src="FragranceOil2.png" alt="scented candle" />
-          </div>
-          <div className="texts">
-            <p className="productType">Fragrance Oil</p>
-            <p className="productName">Cherry flavour</p>
-            <span className="productPrice">$ 59.99/</span>
-            <span className="productWeight">200ml</span>
-          </div>
-
-          <div className="btnsContainer">
-            <button className="buyBtn">Buy Now</button>
-            <div className="iconDiv">
-              <button className="iconBtn">
-                <img src="Cart.png" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-        {/* card9 */}
-        <div className="card">
-          <div className="imgContainer">
-            <img src="AirFreshner2.png" alt="scented candle" />
-          </div>
-          <div className="texts">
-            <p className="productType">Air Freshner</p>
-            <p className="productName">Car Air Freshner</p>
-            <span className="productPrice">$ 59.99/</span>
-            <span className="productWeight">200ml</span>
-          </div>
-
-          <div className="btnsContainer">
-            <button className="buyBtn">Buy Now</button>
-            <div className="iconDiv">
-              <button className="iconBtn">
-                <img src="Cart.png" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-        {/* card10 */}
-        <div className="card">
-          <div className="imgContainer">
-            <img src="Diffuser2.png" alt="scented candle" />
-          </div>
-          <div className="texts">
-            <p className="productType">Diffusser</p>
-            <p className="productName">Cherry flavour</p>
-            <span className="productPrice">$ 59.99/</span>
-            <span className="productWeight">200ml</span>
-          </div>
-
-          <div className="btnsContainer">
-            <button className="buyBtn">Buy Now</button>
-            <div className="iconDiv">
-              <button className="iconBtn">
-                <img src="Cart.png" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-        {/* card11 */}
-        <div className="card">
-          <div className="imgContainer">
-            <img src="Candle4.png" alt="scented candle" />
-          </div>
-          <div className="texts">
-            <p className="productType">Scented Candle</p>
-            <p className="productName">Cherry and Cake</p>
-            <span className="productPrice">$ 59.99/</span>
-            <span className="productWeight">200ml</span>
-          </div>
-
-          <div className="btnsContainer">
-            <button className="buyBtn">Buy Now</button>
-            <div className="iconDiv">
-              <button className="iconBtn">
-                <img src="Cart.png" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-        {/* card12 */}
-        <div className="card">
-          <div className="imgContainer">
-            <img src="Candle.png" alt="scented candle" />
-          </div>
-          <div className="texts">
-            <p className="productType">Scented Candle</p>
-            <p className="productName">Cherry Cake</p>
-            <span className="productPrice">$ 59.99/</span>
-            <span className="productWeight">200ml</span>
-          </div>
-
-          <div className="btnsContainer">
-            <button className="buyBtn">Buy Now</button>
-            <div className="iconDiv">
-              <button className="iconBtn">
-                <img src="Cart.png" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
 
       <div className="pageNums">

@@ -4,46 +4,6 @@
     padding: 0px;
     font-family: 'Poppins'
 }
-
-
-
-nav{
-    width: 100%;
-    height: 55px;
-    display: flex;
-    justify-content: space-evenly;
-}
-nav a{
-    color: #565656;
-    text-decoration: none;
-    margin-top: 18px;
-}
-nav .inputContainer{
-    margin-top: 10px;
-}
-
-.inputContainer input{
-    padding: 10px 5px;
-    border-radius: 5px;
-    border: none;
-    background-color: #EFEEF1;
-    outline: none;
-    text-overflow: ellipsis;
-}
-.inputContainer div{
-    display: inline;
-    background-color: #EFEEF1;
-    border-radius: 5px;
-    margin-left: 13px;
-    width: 20px;
-    padding: 6px 5px;
-}
-#icon{
-    position: absolute;
-    right: 180px;
-    top: 18px;
-        
-}
 .headerImageTexts{
     position: absolute;
     top: 30%;
@@ -155,57 +115,133 @@ nav .inputContainer{
     color: white;
     border: none;
 }
-.extra{
-    width: 100%;
-    height: 150px;
+
+.summary-container {
     background-color: #EFEEF1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    float: right;
+    position: absolute;
+    top: 10%;
+    right: 25%;
+    margin-top: 5.6%;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.summary-item {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 1em;
+    color: #565656;
 }
-.containers{
-    margin-top: 35px;
+
+.summary-item.total {
+    font-weight: bold;
+    color: #1A1A1A;
 }
-.extra div{
-    display: inline-block;
+
+.checkout-button {
+    background-color: #DC82B5;
+    color: #EFEEF1;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-left: 30%;
+    /* transition: background-color 0.3s; */
 }
-.HomeImgDiv{
-    align-content: center;
-    /* margin-left: 10%; */
+
+/* .checkout-button:hover {
+    background-color: #ff4da6;
+} */
+.checkoutContainer{
+    margin-top: 3%;
 }
-.HomeImgDiv img{
-    margin-right: 25px;
+.product-list {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-left: 6%;
+  margin-bottom: 100px;
 }
-footer{
-    width: 100%;
-    background-color: #1A1A1A;
-   
-    height: 300px;
+
+.product-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
 }
-footer h4{
-    color: white;
-    font-weight: 500;
-    margin-bottom: 20px;
+
+.product-item:last-child {
+  border-bottom: none;
 }
-footer a{
-    display: block;
-    color: #CAC9C9;
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 2em;
+
+.product-checkbox {
+  margin-right: 10px;
 }
-footer p{
-    color: #CAC9C9;
-    font-size: 15px;
-    line-height: 2em;
+.product-checkbox input{
+    /* position: absolute; */
+        /* opacity: 0; */
+        /* cursor: pointer; */
+        height: 25px;
+        width: 25px;
+        accent-color: #DC82B5;
+        /* color: white */
 }
-.footerDiv{
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 35px;
+.product-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin-right: 10px;
 }
-ul{
-    list-style: none;
-    color: #CAC9C9;
-    font-size: 15px;
-    line-height: 2em;
+
+.product-info {
+  flex-grow: 1;
+}
+
+.product-info h3 {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 500;
+color: #1A1A1A
+}
+
+.product-info p {
+  margin: 0px 0 5px;
+  color: #565656;
+  font-size: 0.8em;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control button {
+  background-color: #F1CCE1;
+  color: black;
+  border: none;
+  padding: 1px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 1em;
+}
+
+.product-price {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #1A1A1A;
 }
