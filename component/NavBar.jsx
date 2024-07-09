@@ -12,6 +12,7 @@ const NavBar = () => {
       <nav className="navBar">
         <div style={{ display: "inline-block", marginTop: "9px" }}>
           <img src="Logo.png" alt="LushScent logo" className="logo" />
+          <img src="profile.png" alt="profile" className="profile" />
         </div>
 
         <a href="">Home</a>
