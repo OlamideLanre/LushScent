@@ -55,6 +55,7 @@ const Cart = () => {
             <div className="product-item" key={product.id}>
               <div className="product-checkbox">
                 <input type="checkbox" checked={product.checked} />
+                <span></span>
               </div>
               <img
                 src={product.image}

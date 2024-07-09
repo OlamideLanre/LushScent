@@ -200,6 +200,9 @@ h2 {
         accent-color: #DC82B5;
         /* color: white */
 }
+.product-checkbox span{
+    background-color: #EFEEF1;
+}
 .product-image {
   width: 60px;
   height: 60px;

@@ -1,10 +1,16 @@
 import "./footerStyle.css";
+import { FaFacebook, FaInstagram, FaPhone, FaWhatsapp } from "react-icons/fa";
+import { IconContext } from "react-icons";
 const Footer = () => {
   return (
     <>
       <div className="benefits">
         <div className="freeReturn benefit-item">
-          <img src="f7_shippingbox.png" alt="" />
+          <img
+            src="f7_shippingbox.png"
+            alt=""
+            style={{ marginRight: "20px" }}
+          />
           <div className="benefit-text ">
             <h3>Free Return</h3>
             <p>
@@ -13,7 +19,11 @@ const Footer = () => {
           </div>
         </div>
         <div className="freeShipping benefit-item">
-          <img src="hugeicons_shipping-truck-02.png" alt="" />
+          <img
+            src="hugeicons_shipping-truck-02.png"
+            alt=""
+            style={{ marginRight: "20px" }}
+          />
           <div className="benefit-text">
             <h3>Free Shipping</h3>
             <p>
@@ -23,7 +33,11 @@ const Footer = () => {
           </div>
         </div>
         <div className="online benefit-item">
-          <img src="fluent_person-support-24-regular.png" alt="" />
+          <img
+            src="fluent_person-support-24-regular.png"
+            alt=""
+            style={{ marginRight: "20px" }}
+          />
           <div className="benefit-text  ">
             <h3>Online</h3>
             <p>
@@ -63,6 +77,43 @@ const Footer = () => {
               <br />
               answer any of your questions.
             </p>
+            <div
+              className="iconsMainDiv"
+              style={{
+                display: "flex",
+                justifyContent: "space-between",
+                width: "230px",
+              }}
+            >
+              <button>
+                <IconContext.Provider
+                  value={{ style: { verticalAlign: "middle" } }}
+                >
+                  <FaInstagram />
+                </IconContext.Provider>
+              </button>
+              <button>
+                <IconContext.Provider
+                  value={{ style: { verticalAlign: "middle" } }}
+                >
+                  <FaWhatsapp />
+                </IconContext.Provider>
+              </button>
+              <button>
+                <IconContext.Provider
+                  value={{ style: { verticalAlign: "middle" } }}
+                >
+                  <FaFacebook />
+                </IconContext.Provider>
+              </button>
+              <button>
+                <IconContext.Provider
+                  value={{ style: { verticalAlign: "middle" } }}
+                >
+                  <FaPhone />
+                </IconContext.Provider>
+              </button>
+            </div>
           </div>
         </div>
         <hr
