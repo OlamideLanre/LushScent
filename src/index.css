@@ -183,6 +183,7 @@
         display: block;
     }
     .profile{
+        display: inline;
         margin-left: 180px;
     }
 
