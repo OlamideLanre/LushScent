@@ -97,9 +97,9 @@
     }
     .summary-container {
         background-color: white;
-        right: 9%;
+        right: 6%;
         top: 520px;
-        padding-bottom: 30px;
+        padding-bottom: 70px;
         clear: both;
         /* display: none; */
     }
@@ -157,6 +157,7 @@
     }
     .form-container{
         padding-left: 0%;
+        margin-left: 10px;
         /* margin-bottom: 20px; */
     }
     .input-group-short{
